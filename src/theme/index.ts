@@ -1,6 +1,6 @@
 import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
 
-export interface PancakeTheme {
+export interface EnigmaTheme {
   siteWidth: number;
   isDark: boolean;
   colors: Colors;
