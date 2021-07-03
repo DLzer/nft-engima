@@ -1,4 +1,4 @@
-# NFT Enigma ![JahIthBer](https://www.d2itemstore.com/media/catalog/product/cache/3/thumbnail/390x/9df78eab33525d08d6e5fb8d27136e95/r/u/rune_ber.gif)
+# NFT Enigma 🗡️
 
 This is the repository for the NFT Enigma project.
 
