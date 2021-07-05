@@ -6,12 +6,12 @@ const Page = styled(Container)`
   padding-top: 16px;
   padding-bottom: 16px;
 
-  ${({ theme }) => theme.mediaQueries.sm} {
+  @media (min-width: 576px) {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 
-  ${({ theme }) => theme.mediaQueries.lg} {
+  @media (min-width: 968px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }

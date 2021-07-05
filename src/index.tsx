@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'react-bootstrap';
 import App from './App';
+import Providers from './Providers'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <Providers> */}
+      <App />
+    {/* </Providers> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

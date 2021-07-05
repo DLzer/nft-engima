@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Page from 'components/layout/Page'
+import BaseLayout from 'components/layout/BaseLayout'
 
 const Hero = styled.div`
   align-items: center;
@@ -15,11 +16,34 @@ const Hero = styled.div`
   padding-top: 116px;
   text-align: center;
 
-  ${({ theme }) => theme.mediaQueries.lg} {
+  @media (min-width: 968px) {
     background-image: url('/images/egg/3.png');
     background-position: left center, right center;
     height: 165px;
     padding-top: 0;
+  }
+`
+
+const Cards = styled(BaseLayout)`
+  align-items: stretch;
+  justify-content: stretch;
+  margin-bottom: 32px;
+
+  & > div {
+    grid-column: span 6;
+    width: 100%;
+  }
+
+  @media (min-width: 567px) {
+    & > div {
+      grid-column: span 8;
+    }
+  }
+
+  @media (min-width: 968px) {
+    & > div {
+      grid-column: span 6;
+    }
   }
 `
 
@@ -30,6 +54,11 @@ const Home: React.FC = () => {
             <Hero>
                 <h1>NFT Enigma</h1>
             </Hero>
+            <div>
+              <Cards>
+                <div>Card Testing</div>
+              </Cards>
+            </div>
         </Page>
     )
 }

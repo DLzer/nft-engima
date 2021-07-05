@@ -7,7 +7,7 @@ const Container = styled.div`
   padding-left: 16px;
   padding-right: 16px;
 
-  ${({ theme }) => theme.mediaQueries.sm} {
+  @media (min-width: 576px) {
     padding-left: 24px;
     padding-right: 24px;
   }
